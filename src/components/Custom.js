@@ -8,7 +8,11 @@ function Custom(props) {
     <section className="main__form">
       <h3>TECH SPECS AND CUSTOMIZATIONS</h3>
       {/* { features } */}
-      <PartSelector features={props.features} selected={props.selected}/>
+      <PartSelector 
+        features={props.features} 
+        selected={props.selected}
+        handleSelect={props.handleSelect}
+      />
     </section>
   )   
 }

@@ -11,7 +11,7 @@ function Part(props) {
     return <li key={index} className="feature__item">
       <div className={featureClass}
         
-        onClick={e => this.updateFeature(props.id, item)}>
+        onClick={e => props.handleSelect(props.id, item)}>
           { item.name }
           ({ new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD'})
             .format(item.cost) })
