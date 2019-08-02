@@ -4,7 +4,7 @@ import React from 'react';
 
 
 function Part(props) {
-  console.log(props);
+  return (
   props.features[props.id].map((item, index) => {
     const selectedClass = item.name === props.selected[props.id].name ? 'feature__selected' : '';
     const featureClass = 'feature__option ' + selectedClass;
@@ -17,7 +17,8 @@ function Part(props) {
             .format(item.cost) })
       </div>
     </li>
-  });   
+  })   
+  );
 }
 
 export default Part
